@@ -531,8 +531,6 @@ def region_to_fullname(reg):
 
     return reverse_country_codes[reg]
 
-# Пример использования:
-
 from datetime import datetime
 from aiogram.types import ParseMode
 @dp.message_handler()
