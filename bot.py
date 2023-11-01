@@ -559,7 +559,7 @@ async def alltexts(message: types.Message):
         create = date_time_obj1.strftime("%d.%m.%Y %H:%M:%S")
         namedata = date_time_obj2.strftime("%d.%m.%Y %H:%M:%S")
 
-        await bot.send_message(message.from_user.id, '📧 ID: ' + str(user_id) + '\n\n🪪 Имя: ' + str(name) + '\nVerification: ' + str(verification_status) + '\n🔐 Private: ' + str(privacy_status) + '\n\n👤 Subscribers: ' + str(followers_count) + '\n📅 Create account time: ' + str(create) + '\n📅 Change name time: ' + str(namedata) + '\n\nRegion: ' + str(region_to_fullname(region)) + '\nApp language: ' + str(app_lang) + ' ' + str(country_code_to_emoji(app_lang)), parse_mode=ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '📧 ID: ' + str(user_id) + '\n\n🪪 Name: ' + str(name) + '\nVerification: ' + str(verification_status) + '\n🔐 Private: ' + str(privacy_status) + '\n\n👤 Subscribers: ' + str(followers_count) + '\n📅 Create account time: ' + str(create) + '\n📅 Change name time: ' + str(namedata) + '\n\nRegion: ' + str(region_to_fullname(region)) + '\nApp language: ' + str(app_lang) + ' ' + str(country_code_to_emoji(app_lang)), parse_mode=ParseMode.HTML)
 
 def extract_tiktok_username(url):
         try:
